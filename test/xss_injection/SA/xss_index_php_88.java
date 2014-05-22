@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package xss_injectcion.SA;
+package xss_injection.SA;
 
 import Support.Support_Function;
 import net.sourceforge.jwebunit.junit.WebTester;
