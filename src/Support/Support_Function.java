@@ -7,6 +7,7 @@ package Support;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.InputElementFactory;
+import java.util.List;
 import net.sourceforge.jwebunit.api.IElement;
 import net.sourceforge.jwebunit.htmlunit.HtmlUnitElementImpl;
 import net.sourceforge.jwebunit.junit.WebTester;
@@ -26,6 +27,12 @@ public class Support_Function {
             attributes.addAttribute("", "", "type", "", "submit");
             HtmlElement submit = factory.createElement(form.getPage(), "input", attributes);
             form.appendChild(submit);
+    }
+    
+     public static void  setAll(String name,String value , WebTester tester){
+        List<IElement> x = tester.getElementsByXPath("html//input[@name='"+ name +"']");
+        for(IElement e : x)
+        e.setAttribute("value",value);
     }
     
 }
