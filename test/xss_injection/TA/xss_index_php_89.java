@@ -4,7 +4,7 @@
  */
 package xss_injection.TA;
 
-import xss_injectcion.SA.*;
+import xss_injection.SA.*;
 import Support.Support_Function;
 import net.sourceforge.jwebunit.junit.WebTester;
 import org.junit.Before;
