@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="iono-VirtualBox" name="xss_injection.xss_index_php_2" skipped="0" tests="1" time="32.055" timestamp="2014-05-14T17:15:34">
+  <properties>
+    <property name="default.javac.source" value="1.6" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="jnlp.signing.alias" value="" />
+    <property name="javac.source" value="1.8" />
+    <property name="file.reference.httpmime-4.3.2.jar" value="../jwebunit/lib/httpmime-4.3.2.jar" />
+    <property name="java.home" value="/usr/lib/jvm/jdk1.8.0_05/jre" />
+    <property name="file.reference.jwebunit-core-3.2.jar-1" value="../jwebunit/lib/jwebunit-core-3.2.jar" />
+    <property name="platform.home" value="/usr/lib/jvm/jdk1.8.0_05" />
+    <property name="test.src.dir" value="test" />
+    <property name="javadoc.version" value="false" />
+    <property name="jnlp.mixed.code" value="default" />
+    <property name="libs.CopyLibs.classpath" value="/usr/share/netbeans/7.0.1/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/endorsed" />
+    <property name="libs.MySQLDriver.classpath" value="/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="src.dir" value="src" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="netbeans.hash.code" value="unique=NBUBU0a90fe40f-bf43-4bbf-856b-f54122bba5d4_3887b601-db16-430e-9e91-45d81200e58f" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="have.sources" value="true" />
+    <property name="includes" value="**" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="libs.swing-app-framework.javadoc" value="" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="platform.bootcp" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_05/jre/classes:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/localedata.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/zipfs.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/dnsns.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/sunec.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/nashorn.jar" />
+    <property name="java.version" value="1.8.0_05" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="file.reference.jwebunit-htmlunit-plugin-3.2.jar" value="../jwebunit/jwebunit-htmlunit-plugin-3.2.jar" />
+    <property name="javac.debug" value="true" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="run.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/classes" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="platform.javadoc" value="/usr/lib/jvm/jdk1.8.0_05/bin/javadoc" />
+    <property name="file.reference.logback-core-1.0.6.jar" value="../jwebunit/lib/logback-core-1.0.6.jar" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="netbeans.buildnumber" value="20121011-unknown-revn" />
+    <property name="ant.project.invoked-targets" value="test-single" />
+    <property name="file.reference.commons-lang-2.6.jar" value="../jwebunit/lib/commons-lang-2.6.jar" />
+    <property name="jna.platform.library.path" value="/usr/lib/i386-linux-gnu:/lib/i386-linux-gnu:/usr/lib:/lib" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="manifest.file" value="manifest.mf" />
+    <property name="libs.swing-app-framework.maven-pom" value="" />
+    <property name="user.name" value="iono" />
+    <property name="jnlp.enabled" value="false" />
+    <property name="file.reference.logback-classic-1.0.6.jar" value="../jwebunit/lib/logback-classic-1.0.6.jar" />
+    <property name="file.reference.commons-codec-1.9.jar" value="../jwebunit/lib/commons-codec-1.9.jar" />
+    <property name="empty.dir" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/empty" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="platforms.JDK_1.8.bootclasspath" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_05/jre/classes:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/localedata.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/zipfs.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/dnsns.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/sunec.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext/nashorn.jar" />
+    <property name="application.vendor" value="iono" />
+    <property name="sun.java2d.pmoffscreen" value="false" />
+    <property name="jdk.home" value="/usr/lib/jvm/java-6-openjdk-i386" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="netbeans.dirs" value="/usr/share/netbeans/7.0.1/nb:/usr/share/netbeans/7.0.1/bin/../ergonomics:/usr/share/netbeans/7.0.1/ide:/usr/share/netbeans/7.0.1/java:/usr/share/netbeans/7.0.1/bin/../xml:/usr/share/netbeans/7.0.1/apisupport:/usr/share/netbeans/7.0.1/bin/../webcommon:/usr/share/netbeans/7.0.1/bin/../websvccommon:/usr/share/netbeans/7.0.1/bin/../enterprise:/usr/share/netbeans/7.0.1/bin/../mobility:/usr/share/netbeans/7.0.1/bin/../profiler:/usr/share/netbeans/7.0.1/bin/../ruby:/usr/share/netbeans/7.0.1/bin/../python:/usr/share/netbeans/7.0.1/bin/../php:/usr/share/netbeans/7.0.1/bin/../visualweb:/usr/share/netbeans/7.0.1/bin/../soa:/usr/share/netbeans/7.0.1/bin/../identity:/usr/share/netbeans/7.0.1/bin/../uml:/usr/share/netbeans/7.0.1/harness:/usr/share/netbeans/7.0.1/bin/../cnd:/usr/share/netbeans/7.0.1/bin/../dlight:/usr/share/netbeans/7.0.1/bin/../groovy:/usr/share/netbeans/7.0.1/bin/../extra:/usr/share/netbeans/7.0.1/bin/../javafx:/usr/share/netbeans/7.0.1/bin/../javacard:" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="jnlp.file.name.default" value="launch.jnlp" />
+    <property name="javadoc.author" value="false" />
+    <property name="ap.proc.none.internal" value="" />
+    <property name="user.timezone" value="Europe/Rome" />
+    <property name="manifest.available" value="true" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="libs.junit.javadoc" value="/usr/share/doc/junit-doc/doc/api" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="path.separator" value=":" />
+    <property name="version-output" value="java version &quot;1.8.0_05&quot;&#xa;Java(TM) SE Runtime Environment (build 1.8.0_05-b13)&#xa;Java HotSpot(TM) Server VM (build 25.5-b02, mixed mode)" />
+    <property name="libs.absolutelayout.classpath" value="/home/iono/.netbeans/7.0/modules/ext/AbsoluteLayout.jar" />
+    <property name="jnlp.signing" value="" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="platform.java.tmp" value="${platforms.JDK_1.8.java}" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner xss_injection.xss_index_php_2 filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/test/results/TEST-xss_injection.xss_index_php_2.xml crashfile=/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/junitvmwatcher468196528675184544.properties propsfile=/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/junit3455874896936563987.properties" />
+    <property name="built-jar.properties" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/built-jar.properties" />
+    <property name="libs.junit.src" value="" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="ant.file" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/build.xml" />
+    <property name="ant.file.Testing-SchoolMate" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/build.xml" />
+    <property name="libs.junit_4.src" value="" />
+    <property name="file.reference.serializer-2.7.1.jar" value="../jwebunit/lib/serializer-2.7.1.jar" />
+    <property name="netbeans.autoupdate.language" value="en" />
+    <property name="do.jar" value="true" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="user.language" value="en" />
+    <property name="jnlp.dest.dir" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/dist" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="javac.compilerargs" value="" />
+    <property name="file.reference.httpclient-4.3.2.jar" value="../jwebunit/lib/httpclient-4.3.2.jar" />
+    <property name="jar.compress" value="false" />
+    <property name="debug-transport-by-os" value="dt_socket" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="javadoc.private" value="false" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="platforms.JDK_1.8.compiler" value="modern" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="netbeans.dynamic.classpath" value="/usr/share/netbeans/7.0.1/platform/core/org-openide-filesystems.jar:/usr/share/netbeans/7.0.1/platform/core/core.jar:/usr/share/netbeans/7.0.1/nb/core/org-netbeans-upgrader.jar:/usr/share/netbeans/7.0.1/nb/core/locale/core_nb.jar" />
+    <property name="libs.beans-binding.javadoc" value="" />
+    <property name="platform.active" value="JDK_1.8" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="platform.javac" value="/usr/lib/jvm/jdk1.8.0_05/bin/javac" />
+    <property name="javac.includes.binary" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/test/classes/xss_injection/xss_index_php_2.class" />
+    <property name="ant.file.type.Testing-SchoolMate" value="file" />
+    <property name="libs.junit_4.javadoc" value="/usr/share/doc/junit4/api" />
+    <property name="endorsed.classpath" value="" />
+    <property name="javac.includes" value="xss_injection/xss_index_php_2.java" />
+    <property name="netbeans.autoupdate.country" value="US" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="file.reference.regexp-1.3.jar" value="../jwebunit/lib/regexp-1.3.jar" />
+    <property name="do.mkdist" value="true" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="ap.processors.internal" value="" />
+    <property name="do.archive" value="true" />
+    <property name="dist.jar" value="dist/Testing-SchoolMate.jar" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 14 2013" />
+    <property name="netbeans.home" value="/usr/share/netbeans/7.0.1/platform" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="user.properties.file" value="/home/iono/.netbeans/7.0/build.properties" />
+    <property name="file.reference.htmlunit-2.14.jar" value="../jwebunit/lib/htmlunit-2.14.jar" />
+    <property name="libs.JWSAntTasks.classpath" value="/usr/share/netbeans/7.0.1/java/ant/extra/org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="os.name" value="Linux" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="run.test.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/classes:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/test/classes" />
+    <property name="file.reference.nekohtml-1.9.20.jar" value="../jwebunit/lib/nekohtml-1.9.20.jar" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
+    <property name="manifest.available-mkdist.available" value="true" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="ant.file.type.jnlp-impl" value="file" />
+    <property name="file.reference.jetty-http-8.1.14.v20131031.jar" value="../jwebunit/lib/jetty-http-8.1.14.v20131031.jar" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="libs.junit.classpath" value="/usr/share/netbeans/7.0.1/java/modules/ext/junit-3.8.2.jar" />
+    <property name="ap.supported.internal" value="true" />
+    <property name="java.library.path" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/i386/server:/usr/lib/jvm/jdk1.8.0_05/jre/lib/i386:/usr/lib/jvm/jdk1.8.0_05/jre/../lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="java.class.version" value="52.0" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="basedir" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate" />
+    <property name="sun.awt.exception.handler" value="org.netbeans.core.startup.TopLogging$AWTHandler" />
+    <property name="javac.test.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/classes:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar" />
+    <property name="platform.javadoc.tmp" value="${platforms.JDK_1.8.javadoc}" />
+    <property name="javac.processorpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar" />
+    <property name="ant.home" value="/usr/share/netbeans/7.0.1/java/ant" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="javac.test.processorpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/classes:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar" />
+    <property name="javadoc.preview" value="true" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="/usr/share/netbeans/7.0.1/ide/modules/ext/postgresql-8.3-603.jdbc3.jar" />
+    <property name="jnlp.signing.keystore" value="" />
+    <property name="junit.forkmode" value="perTest" />
+    <property name="libs.junit_4.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar" />
+    <property name="file.reference.cssparser-0.9.13.jar" value="../jwebunit/lib/cssparser-0.9.13.jar" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/i386" />
+    <property name="build.dir" value="build" />
+    <property name="application.title" value="Testing-SchoolMate" />
+    <property name="libs.swing-app-framework.classpath" value="/usr/share/netbeans/7.0.1/java/modules/ext/appframework-1.0.3.jar:/usr/share/netbeans/7.0.1/java/modules/ext/swing-worker-1.1.jar" />
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="file.reference.htmlunit-core-js-2.14.jar" value="../jwebunit/lib/htmlunit-core-js-2.14.jar" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="helper.file" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/helper.txt" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="run.jvmargs" value="" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="ant.project.name" value="Testing-SchoolMate" />
+    <property name="libs.swing-layout.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/swing-layout-1.0.4.jar" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="file.reference.jetty-websocket-8.1.14.v20131031.jar" value="../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar" />
+    <property name="work.dir" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate" />
+    <property name="file.reference.xercesImpl-2.11.0.jar" value="../jwebunit/lib/xercesImpl-2.11.0.jar" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="file.reference.jetty-util-8.1.14.v20131031.jar" value="../jwebunit/lib/jetty-util-8.1.14.v20131031.jar" />
+    <property name="javadoc.use" value="true" />
+    <property name="manifest.available+main.class-mkdist.available" value="true" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="os.version" value="3.11.0-18-generic" />
+    <property name="file.reference.xalan-2.7.1.jar" value="../jwebunit/lib/xalan-2.7.1.jar" />
+    <property name="excludes" value="" />
+    <property name="jnlp.descriptor" value="application" />
+    <property name="user.home" value="/home/iono" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="ant.file.type.Testing-SchoolMate-impl" value="file" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="user.dir" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate" />
+    <property name="file.reference.commons-lang3-3.2.1.jar" value="../jwebunit/lib/commons-lang3-3.2.1.jar" />
+    <property name="platform.compiler" value="${platforms.JDK_1.8.compile}" />
+    <property name="debug-transport" value="dt_socket" />
+    <property name="file.reference.httpcore-4.3.1.jar" value="../jwebunit/lib/httpcore-4.3.1.jar" />
+    <property name="application.args" value="" />
+    <property name="javac.includesfile.binary" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/null618372286" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="compile.on.save" value="true" />
+    <property name="file.reference.commons-collections-3.2.1.jar" value="../jwebunit/lib/commons-collections-3.2.1.jar" />
+    <property name="endorsed.classpath.cmd.line.arg" value="" />
+    <property name="jar.index" value="false" />
+    <property name="jnlp.offline-allowed" value="false" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="java.vm.version" value="25.5-b02" />
+    <property name="java.class.path" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:/home/iono/Desktop/Security Testing/jwebunit/jwebunit-core-3.2.jar:/home/iono/Desktop/Security Testing/jwebunit/jwebunit-htmlunit-plugin-3.2.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/commons-codec-1.9.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/commons-collections-3.2.1.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/commons-io-2.4.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/commons-lang-2.6.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/commons-lang3-3.2.1.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/cssparser-0.9.13.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/htmlunit-2.14.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/htmlunit-core-js-2.14.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/httpclient-4.3.2.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/httpcore-4.3.1.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/httpmime-4.3.2.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/jcl-over-slf4j-1.6.6.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/jetty-http-8.1.14.v20131031.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/jetty-io-8.1.14.v20131031.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/jetty-util-8.1.14.v20131031.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/jwebunit-core-3.2.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/logback-classic-1.0.6.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/logback-core-1.0.6.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/nekohtml-1.9.20.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/regexp-1.3.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/sac-1.3.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/serializer-2.7.1.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/servlet-api-2.5.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/slf4j-api-1.6.6.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/xalan-2.7.1.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/xercesImpl-2.11.0.jar:/home/iono/Desktop/Security Testing/jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/classes:/home/iono/Desktop/Security Testing/Testing-SchoolMate/build/test/classes:/usr/share/netbeans/7.0.1/java/ant/lib/junit.jar:/usr/share/netbeans/7.0.1/java/ant/lib/ant-launcher.jar:/usr/share/netbeans/7.0.1/java/ant/lib/ant.jar:/usr/share/netbeans/7.0.1/java/ant/lib/ant-junit.jar:/usr/share/netbeans/7.0.1/java/ant/lib/ant-junit4.jar" />
+    <property name="annotation.processing.processor.options" value="" />
+    <property name="ant.customtasks.libs" value="JWSAntTasks" />
+    <property name="os.arch" value="i386" />
+    <property name="javac.deprecation" value="false" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="dist.dir" value="dist" />
+    <property name="netbeans.user" value="/home/iono/.netbeans/7.0" />
+    <property name="debug.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/classes" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="jar.index.metainf" value="false" />
+    <property name="jnlp.codebase.type" value="local" />
+    <property name="file.reference.jwebunit-core-3.2.jar" value="../jwebunit/jwebunit-core-3.2.jar" />
+    <property name="platform.java" value="/usr/lib/jvm/jdk1.8.0_05/bin/java" />
+    <property name="annotation.processing.enabled.in.editor" value="false" />
+    <property name="file.reference.servlet-api-2.5.jar" value="../jwebunit/lib/servlet-api-2.5.jar" />
+    <property name="ant.core.lib" value="/usr/share/netbeans/7.0.1/java/ant/lib/ant.jar" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="jnlp.signed" value="false" />
+    <property name="do.depend" value="false" />
+    <property name="file.separator" value="/" />
+    <property name="java.runtime.version" value="1.8.0_05-b13" />
+    <property name="debug.test.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/classes:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar:build/test/classes" />
+    <property name="platforms.JDK_1.8.home" value="/usr/lib/jvm/jdk1.8.0_05" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/jdk1.8.0_05/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_05/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_05/jre/classes" />
+    <property name="file.reference.sac-1.3.jar" value="../jwebunit/lib/sac-1.3.jar" />
+    <property name="libs.beans-binding.classpath" value="/usr/share/netbeans/7.0.1/java/modules/ext/beansbinding-1.2.1.jar" />
+    <property name="have.tests" value="true" />
+    <property name="main.class" value="" />
+    <property name="jar.archive.disabled" value="false" />
+    <property name="test.includes" value="xss_injection/xss_index_php_2.java" />
+    <property name="file.reference.slf4j-api-1.6.6.jar" value="../jwebunit/lib/slf4j-api-1.6.6.jar" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="file.reference.jcl-over-slf4j-1.6.6.jar" value="../jwebunit/lib/jcl-over-slf4j-1.6.6.jar" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.javac-api.classpath" value="/usr/share/netbeans/7.0.1/java/modules/ext/javac-api-nb-7.0-b07.jar" />
+    <property name="file.reference.xml-apis-1.4.01.jar" value="../jwebunit/lib/xml-apis-1.4.01.jar" />
+    <property name="user.country" value="US" />
+    <property name="javadoc.notree" value="false" />
+    <property name="ant.file.jnlp-impl" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/nbproject/jnlp-impl.xml" />
+    <property name="platform.javac.tmp" value="${platforms.JDK_1.8.javac}" />
+    <property name="file.reference.commons-io-2.4.jar" value="../jwebunit/lib/commons-io-2.4.jar" />
+    <property name="javac.classpath" value="/usr/share/netbeans/7.0.1/platform/modules/ext/junit-4.8.2.jar:../jwebunit/jwebunit-core-3.2.jar:../jwebunit/jwebunit-htmlunit-plugin-3.2.jar:../jwebunit/lib/commons-codec-1.9.jar:../jwebunit/lib/commons-collections-3.2.1.jar:../jwebunit/lib/commons-io-2.4.jar:../jwebunit/lib/commons-lang-2.6.jar:../jwebunit/lib/commons-lang3-3.2.1.jar:../jwebunit/lib/cssparser-0.9.13.jar:../jwebunit/lib/htmlunit-2.14.jar:../jwebunit/lib/htmlunit-core-js-2.14.jar:../jwebunit/lib/httpclient-4.3.2.jar:../jwebunit/lib/httpcore-4.3.1.jar:../jwebunit/lib/httpmime-4.3.2.jar:../jwebunit/lib/jcl-over-slf4j-1.6.6.jar:../jwebunit/lib/jetty-http-8.1.14.v20131031.jar:../jwebunit/lib/jetty-io-8.1.14.v20131031.jar:../jwebunit/lib/jetty-util-8.1.14.v20131031.jar:../jwebunit/lib/jetty-websocket-8.1.14.v20131031.jar:../jwebunit/lib/jwebunit-core-3.2.jar:../jwebunit/lib/logback-classic-1.0.6.jar:../jwebunit/lib/logback-core-1.0.6.jar:../jwebunit/lib/nekohtml-1.9.20.jar:../jwebunit/lib/regexp-1.3.jar:../jwebunit/lib/sac-1.3.jar:../jwebunit/lib/serializer-2.7.1.jar:../jwebunit/lib/servlet-api-2.5.jar:../jwebunit/lib/slf4j-api-1.6.6.jar:../jwebunit/lib/xalan-2.7.1.jar:../jwebunit/lib/xercesImpl-2.11.0.jar:../jwebunit/lib/xml-apis-1.4.01.jar:/usr/share/netbeans/7.0.1/ide/modules/ext/mysql-connector-java-5.1.13-bin.jar" />
+    <property name="default.javac.target" value="1.6" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="do.archive+manifest.available" value="true" />
+    <property name="libs.swing-layout.src" value="" />
+    <property name="libs.swing-layout.javadoc" value="" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="javac.target" value="1.8" />
+    <property name="ant.file.Testing-SchoolMate-impl" value="/home/iono/Desktop/Security Testing/Testing-SchoolMate/nbproject/build-impl.xml" />
+    <property name="runtime.encoding" value="UTF-8" />
+    <property name="libs.swing-app-framework.src" value="" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="mkdist.disabled" value="false" />
+    <property name="file.reference.jetty-io-8.1.14.v20131031.jar" value="../jwebunit/lib/jetty-io-8.1.14.v20131031.jar" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="xss_injection.xss_index_php_2" name="Attack" time="28.39">
+    <failure message="Located element with xpath &quot;//table/tbody/tr/td/div/h1&quot;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Located element with xpath &quot;//table/tbody/tr/td/div/h1&quot;
+	at net.sourceforge.jwebunit.junit.WebTester.assertElementNotPresentByXPath(WebTester.java:2138)
+	at xss_injection.xss_index_php_2.Attack(xss_index_php_2.java:49)
+</failure>
+  </testcase>
+  <system-out><![CDATA[19:15:49.518 [main] DEBUG c.g.htmlunit.WebClient - Get page for window named '', using WebRequest[<url="http://localhost/schoolmate/index.php", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+19:15:49.639 [main] DEBUG c.g.htmlunit.WebClient - Load response for GET http://localhost/schoolmate/index.php
+19:15:53.006 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: mine
+19:15:53.193 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+19:15:53.201 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:80][total kept alive: 0; route allocated: 0 of 6; total allocated: 0 of 20]
+19:15:53.749 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:80][total kept alive: 0; route allocated: 1 of 6; total allocated: 1 of 20]
+19:15:53.888 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:80
+19:15:53.934 [main] DEBUG o.a.h.c.HttpClientConnectionManager - Connecting to localhost/127.0.0.1:80
+19:15:53.945 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request GET /schoolmate/index.php HTTP/1.1
+19:15:53.945 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+19:15:53.949 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+19:15:53.964 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /schoolmate/index.php HTTP/1.1
+19:15:53.965 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost
+19:15:53.966 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0
+19:15:53.966 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+19:15:53.966 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, deflate
+19:15:53.966 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Language: en-US
+19:15:53.966 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+19:15:53.967 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /schoolmate/index.php HTTP/1.1[\r][\n]"
+19:15:53.968 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost[\r][\n]"
+19:15:53.968 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0[\r][\n]"
+19:15:53.968 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[\r][\n]"
+19:15:53.968 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+19:15:53.969 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Language: en-US[\r][\n]"
+19:15:54.027 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+19:15:54.029 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+19:15:54.073 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+19:15:54.073 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 14 May 2014 17:15:54 GMT[\r][\n]"
+19:15:54.074 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: Apache/2.4.6 (Ubuntu)[\r][\n]"
+19:15:54.074 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Powered-By: PHP/5.5.3-1ubuntu2.2[\r][\n]"
+19:15:54.074 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: PHPSESSID=rt04fqtb0mmo3k75k51hujvit5; path=/[\r][\n]"
+19:15:54.074 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+19:15:54.075 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+19:15:54.076 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+19:15:54.077 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+19:15:54.078 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+19:15:54.078 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 1755[\r][\n]"
+19:15:54.082 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+19:15:54.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+19:15:54.084 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: text/html[\r][\n]"
+19:15:54.085 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+19:15:54.178 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xd5]Y[0xe9]o[0xdb]6[0x14][0xff],[0x1][0xfd][0x1f][0x88][0xe][0x9b][0xb6][0xa2][0x91]e[0xbb]NS[0xc7][0x16][0x90][0xa4])64i[0x8b][0xa5][0xc5][0xb0]O[0x83][0xe][0xda]R+[0x89][0x82]H[0xc7][0xf1][0x86][0xfd][0xef]{[0xbc]t[0x85]>[0x12][0xac];[0xa2][0xc0][0x92][0xc8][0xc7][0xc7][0xdf][0xbb][0x1f][0xed]Y[0xc2][0xf2][0xcc][0xb7][0xd1],[0xc1]A[0xcc][0xef],e[0x19][0xf6]o[0xa2][0x84][0x90][0xec]:`[0x18][0x1d][0xc1][0xdc][0xd0][0xbf][0xa3]t6[0x80][0xfb]l [0x9][0x80][0x92][0xb2]M[0x86][0x11][0xdb][0x94]x[0xfe][0x94][0xe1];6[0x88](}[0xea][0xdb]6[0x1a]<C[0xe7][0xef]_[0xff][0x8a][0x9e][\r]l[0x14][0x92]xc[0xa3]?l[0x84][0xc2] [0xfa][0xb2][0xac][0xc8][0xaa][0x88][0x8f]"[0x92][0x91]j[0x8a][0xbe][0x19][0x8f][0x8f][0x8f]_[0xbd]:[0xb5][0xd1][0x9f]r[0xd5][0xd5]O[0xef][0xde][0xde][0x88]e[0xe8][0xcc]][0x10][0xc2]p[0x5][0x8f]|1B[0xb]R[0xb0][0xa3]E[0x90][0xa7][0xd9]f[0x8a][0x82]*[\r][0xb2][0xd3]f[0x9c][0xa6][0xbf][0xe3])[0x1a]z%k[\r][0xae]q[0xba]L[0xd8][0x14][0x15][0xa4][0xca]5[0xb5][0xda][0x99][0xa6][0xd9]-[0xae][0xe4][0x10][0x87]~[0x14][0xe3][0x88]T[0x1]KI1E[0x80][0x10]WYZ`>[0xcf][0x91][0xd5]`[0xa6][0x9][0xb9][0xfd]Z[0x90][0xc2][0xc][0xf4]sj[[0x7][0xc1][0xc9]q[0xb1][0x12]0,[0x13][0x6][0xab][\r]`[0xc4][0x1]X[0x9d][0xdd]C[0x92][0xc5]0[0xa6][0xad][0x80][0x8f][0xa3]`[0x1c][0x9b][0xb6].[0xc8][0xbd]][*0[0xee][0xdd][0x97][0xd4][0x95][0xdf][0x8][0xe0][\r][0xfc][0x9d][0x9f]o[0xb1]F[0xf]C[0x19],[0x1]E[0xae]m[0xb0][0x5][0x82][0xc9][0x2][0xdb][0xc][0xa0]Q[0x9c]x[0xfc][0x12]C[0x7][0x82][0xe8][0xba][0xc3][0xdf][0x8][0xe5][0xec][0x82]_[0x7]A[0xa1]8[0xc3][0x11][0xc3][0xf1][0xd7][0xd3][0x8b]'[0xfe][0xcc]`L[0xbe][0xd9]C[0xf4][0xaf]([0xc9][0x84]+e8[0xa7][0xff][0x1][0xfd][0x8][0x1c]_M+[0x93]7[0xfc]:[0x14][\r][0xe4][0xdc][0x8f]g[0xe7]W[0x97]*[0xe9][0xb2] [0xcc][0xb0][0x8c]mC[0xb6]~#[0xfe][0xea][0xb5][0x82][0xd8][0xdd][0xec]$[0x97]Q[0xdd]"[0x8f]7[0x5][0x88][0x19]e)eZ[0xf8][0x90]T[0x0][0xab]^69[0xe1][0xd7]ikf[0x9d][0xc6],[0x99]"[0xd7]{9[0xb9][0xbc]nO[0x88][0x2][0x4][0xc9][0x9c]di,[0xc6][0xcb] [0x8e][0xd3]byTI[0xf5][0xc][0xcb][0xbb][0xce]pH[0x18]#[0xf9][0xfd][0xf1][0xc]/[0x80][0xda][0xeb][0x8d]2R[0xd6][0x83]R[0x82][0xd8][\r]k[0xd0];[0x8a]YC}{[0x10]y{[0xb6][0xc2]%[0xe][0x0][0x8c][0xbc][0x1f]m[0xda][0xec][0xd6];[0xb8][0xf5]m[0x13][0xbb]AQ[0x0]E[0x84]!i[0xd7][0xaa][0x16][0x1e][0x11]d[0xe9][0x12][0x9c][0xe1][0xf3][0x8a][0xb2]t[0xb1]1(b[0xd4][0xd7][0x84]R[0xe7][0xa8][0xad][0xc][0x97][0xc4][0xf1][0xe]<[0xfd][0xe0]T[0x9b]F[0x0]F[0xd6]][0xc9][0x4][0xdf][0xe2]b[0x7][0x97]K[0x8f]_{[0xb9][0xf0][0xd6][0xa5][0x9][0xa6][0xbd][0xae][0x8]N[0xff][0xe3][0xe5][0xd9][0xeb][0xcb][0x9f][0x95][0xd7]'C[0xbd][0xb4][[0xd1]X[0x9a]cz[0xaf][0xa2][0x8d]F[0xc6][0x8a].K[0x1a]2[0xe7][0x85][0xed]Y|[0xa7]`[0xc9][0x8]J.[0xa5][0x90]G[\r][0xf5][0xd6][0x8c]nx[0xbc][0x7][0xdd][0xa3][0x90][0x80][0xc6].>[0xdd]||[0x8d].[0xae][0xce]nnt[0xba][0xd0][0xe8]Br[0xb7]7[0xb]X[0xc6][0x98][0xb5][0xcc]!n[0xf5]rB[0xdd][0xa1]([0x8f][0x14][0xf9][0xf0][0xae][0xf7][0x1][0xd3]yZhV[0xc3]I3[0x94](-[0xe8]1E2[0xe6][0xd6][0xb1][0xf4][0xe4]H[0xbc][0xed]m[0xa7]D[0x1e][0xb6][0xda][0xaa][0xe2]A[0x3]C<[0x9f]/2[0xb2][0xee]U[0xe8][0x96][0x8e][0xa4]N[0xff][0x17][0x9a]z[0xa4][0xa2]L[0x1e]d[0x81]^X[0x1a][0x5][0x99][0x9e][0xc8][0xd3]8[0xce]pGc[0xc1][0x8a][0x91]Fc[0xff]L[0xe3]/[0xf7][0xda][0xe0][0xc][0x10]p[0xdc][0xdb]C[0xac]m[0xff][0xd1][0xe4]~;[0xad][0xb7]yXCm[0xcf][0x6][0xc2][0xc2]><[0xa8][0xb3][0x17][0x9c][0xa9][0xf8]q[0x9][0x91][0xe2][0x8a][0x4][0xf1][0xdc][0x89]I[0xb4][0xe2][0xe9][0xdb][0xcd][0xc8]2-[0xdc][0x15][0xc5][0x15]TO[0xc][\n]"
+19:15:54.181 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x8a]V[0xf4][0xfb][0x1f]N[0x1d]q^[0xe3]u[0x15][0xb4][0x9d]e[0xca][0xe4]sO[0xbc][0xd1]2[0x88][0xe4][0x9b]t[0x11]x[0x10][0xe6][0x9c];C[0xcf][0xfb][0xd6]A[0xd2][0x9c]s[0xe7][0xc4][0x93]l*[0xf1][0x19][0xa3]([0xb]([0x9d];[0xa1][0xa3][0xc9][0xc1][0xfa][0x9c][0x2][0xcd][0xd2]|[0x89]h[0x15][0xcd][0x1d]w[0x90][0xe6][0xe0][0xd2]T[0x1e][0x5][0xdd]e[0xba]h[0xd8][0xbd][0x9c]t[0x16][0xa2][0x1]g;`q[0x9f][0xbb][0xe0][0xf8]p[0xec]'[0x0]].[0xad][0xe4][0xad][0xc7][0x12][0xcd][0xe2][0xf4]V[0xf]5[0xc6]u[0x90]p[0xbe][0xb9]#[0xbd][0xd2][0xf1][0xbb]GZX#[0xb8]I[0x9c][0xfc]^[0xa9];[0x7]XK [0xc7][0xeb][0xd1]Z[0xf9]f[0xbd][0x9e][0xc0]K[\r][0xbf]+UW[0xe2][0x1e]4[0xdb](\[0xbd][0xc9][0xd8][0xab][0xf7][0x18]z[0xfe][0xc][0xe7]%[0xdb][0xf8]5r[0xc3][0x92][0xa1][0xd7]*[0x89]m[0xe3][0x91][0x92][0xa7].a[0xbe][0xdd]|[0xea][0xed][0xb6]2:[0x80][0xc9]^0[0xa2][0xcb]01[0x92]j[0xb7][0xb7]X]3[0x1e]{[0xe8]Vi[0x12][0x98])g[0x8][0xab][0x8e]][[0xeb]n[0xf7]!jt[0xf3]][0x11][0xd2][0xf2][0xd4][0xc0]d[0xed][0x18][0xb6][0x94].q[0x80][0xe1]G[0x13][0xb3][0xe3][0x88]7[0xdf][0xb6][0x84][0xb0][0x96][0xd8][0xaf][0xbb][0x8b][0xa5][0x4][0xb3]P[0xdf][0x1]'^[0xcb][0xe5][0xba]n[0xb5][0x3][0xc8]D[0xb1][0xe2]J[0xb6][0x90][0x94]Pq[0x9c]p`[0x8a][0x11]WH_`[0xcb]j[0xc7][S[0xea][0xc4][0x14]B[0xef][0xc1][0xa6]i[0x11]d[0xa2][0xb5][0xe0][0xc4]2[0xd2][0xc4]&B[0x9d]J>[0xc3]n[0xc2][0x1b][0x1e][0xb6][0x9d]T[\n]"
+19:15:54.181 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xdc][0x17][0x90][0x90]Q[0x10][0xf1][0x94]+[0xc][\n]"
+19:15:54.182 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xc7][0x9e];[0xb7]LJ[0x7][0xe5][0x98]%[0x4][0xac]\[0x12][\n]"
+19:15:54.182 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xcc]y2[0x5][0xb9]xru[0xfc][0xdd][0xc1]<y\0[0xd7][0x99]H)D[0xda]T+[0xb9]+[0xaa][0xda]k[0xd2][0xf8][0xb1][0xac][0x94][0x10][0xe][0xa1][0xff]I[0xe5][0xfe][0xa9]v[0xc6]PE[0x87]f[0xe6][0xcf][0xd2][0xa2]\1[0xf9]u[0x1c]W[0xb7][0x92]N[0x17][\r][0x90]=[0xb8][0xcb]p[0xb1][0xe4].[0xaf]=ox[0xd2][0xe2]"[0xc3][0xec]@[0x94]/&&[0x94][0x1f]@[0xd8]5h[0xe9]0[0x94][0xa5][0xa2]VH[0xf5][0xeb][0xa3][0x91]v[0x2][0xb5][0xf]_[0x1b][0xa4][0xc6][0xdf][0x81]BWa[0x9e]2.[0xd2][\n]"
+19:15:54.182 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x90]\[0x9][0x8f][0x80]2|[0x91][0xa5][0xd1][0x97]{uX~J[0xda]![0x14]a[0xed][0xca]mdu[0x91][0x10]0Z;9[0x9][0xa8][0xb][0x17]N-[0xf4][0x12];z_[0xcf][0xd9]K[0xaf][0x9c]U[0x4][0xec][0x80][0xfb][0xb9]H[0x11]*[0xac][0x14][0x10][0xd4]T0[0x15][0xd5][0xdb][0x83][0xda][0x1c]f[0xe6]([0xab][0xb][0x94]e[0xcc]r[0xdb]Jx;[0x4][0x94][0xc1][0x8c][0x96][0xe9][0xfb][0x13][0x8f]v[0x19][0xd1][0x86][0xce][0x83][0x8a][0xef][0xa7][0xdd][0xcf][0xe5][0xd2]A[0xa2][0x8d][0xe2][0xaa]l[0x1f]b[0xc7][0xbc][0x83][0xed][0x9e][0xe5][0xc5][0xf9][0xb5].[0xa4][0xa3][0xf1][0xb8][0x95]s[0x87][0xc3]~[0x8b][0xd0][0xc7][0xc3];[0x19]K[0xe7]-K[[0xba]e[0xe8][0xba][0x8d][0xa8]s[0xdb]C[0x12])[0xda][0xab]s4KF=[0x2][0xc7][0xff]H[0xe2]`[0xe3]Pt-[0x7][0xa0][0x9f][0x19][0xf9]uu@[0x1f][0x93][0x94]"[0xf8]g[0x9][0xd6][0x14][0x88],[0xc4]+,[0x9b][0x1e]=[0xb1][0xf9][0xf5][0xb][0x86][0x91][0xb4][0xf8][0x82][0xc8][0xaa]B[0x8b][0x0]f+[\n]"
+19:15:54.183 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x8d]4[0xc9][0xe8]s8}[0x80][0x4][0x14][0xc8][0xe1][0x8e][0x11][0x14][0xc9][0xf5][0xf3]'vA[0xe0]}[0x15]2[0xb1][0x80]OS[0x6][0x84][0x5]Ek[0xb2][0xca]b[0xc5]lE[0x9f][0xd8][0x94][0xb8];[0xdd][0xb3][0xdf]`5[0xbd]W=[0xa3][0xcb][0xee][0xc3][0x8a]w[0xab][0x97][0x90]IA[0xa7][0x6][0xde][0xb8]w[0xfb][0x8a]}MES[0x96][0xf]mp[0xda]K[0xcc][0xf0][0xe4][0x17]Q[0xf][0xeb][0xbe][0xf6]q{H[0xb]v([0xcf]=-YGu[0x84][0x87]|1[0x81][0xc2][0xe5][0x5]?[0x7][0xcd][0x1d][0xf5][0x15]W#[0xc1][0xc8]S=[0x92][0xf4]j[0xf1][0x8c]f|[0x99][0x6])[0x8f]~[0x8e][0xff][0x81][0xac]q[0x85]ct[0xbe][0xe1]??[\r]8[0x89]?[0xb][0x10][0xb][0xaa]%[0x6]F[0xbf][0x9d]_[0x9d][0xbd]{[0xb][0x8c]+[0xbc][0x80][0xc][0xc9]X9[0x1d][0xc][0xd6][0xeb][0xb5][0xb]Md[0x1e]0[0x1c][0x94]%dnq[0xe6][0xa2]nDr[0xa7][0xcf][0xbf][0xf9]yk6[0x8][0xfa][0x98]z2[0xb6]|[0x94][0x9f][0xce][0xc4][0x83][0xf8][0xd1][0xec]/g[0x13][0x92]l;[0x1b][0x0][0x0]"
+19:15:54.250 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+19:15:54.251 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 14 May 2014 17:15:54 GMT
+19:15:54.251 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Server: Apache/2.4.6 (Ubuntu)
+19:15:54.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Powered-By: PHP/5.5.3-1ubuntu2.2
+19:15:54.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: PHPSESSID=rt04fqtb0mmo3k75k51hujvit5; path=/
+19:15:54.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+19:15:54.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+19:15:54.324 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+19:15:54.327 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
+19:15:54.327 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+19:15:54.327 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 1755
+19:15:54.327 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=5, max=100
+19:15:54.327 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: Keep-Alive
+19:15:54.327 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: text/html
+19:15:54.551 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 5000 MILLISECONDS
+19:15:54.717 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [PHPSESSID="rt04fqtb0mmo3k75k51hujvit5", version:0, domain:localhost, path:/, expiry:null]
+19:15:54.895 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:80] can be kept alive for 5.0 seconds
+19:15:54.896 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:80][total kept alive: 1; route allocated: 1 of 6; total allocated: 1 of 20]
+19:15:55.386 [main] DEBUG c.g.htmlunit.WebWindowImpl - setEnclosedPage: HtmlPage(http://localhost/schoolmate/index.php)@1578195
+19:15:55.394 [main] DEBUG c.g.htmlunit.WebWindowImpl - destroyChildren
+19:15:57.406 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+19:15:57.406 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+19:15:57.407 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+19:15:57.411 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+19:15:57.411 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+19:15:57.411 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+19:15:57.412 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+19:15:57.412 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+19:15:57.412 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+19:15:57.412 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+19:15:57.412 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+19:15:57.413 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+19:15:57.413 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+19:15:57.413 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+19:15:57.413 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+19:15:57.413 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+19:15:57.414 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+19:15:57.414 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+19:15:57.414 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+19:15:57.414 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLKeygenElement
+19:15:57.415 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+19:15:57.431 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+19:15:57.432 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+19:15:57.432 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+19:15:57.432 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+19:15:57.433 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+19:15:57.433 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+19:15:57.433 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+19:15:57.433 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+19:15:57.433 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+19:15:57.434 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+19:15:57.434 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+19:15:57.434 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLInlineQuotationElement
+19:15:57.434 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+19:15:57.434 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+19:15:57.442 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+19:15:57.442 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+19:15:57.442 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+19:15:57.442 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+19:15:57.442 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+19:15:57.442 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+19:15:57.443 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+19:15:57.445 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLWBRElement
+19:15:57.446 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+19:15:57.446 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomCharacterData to CharacterDataImpl
+19:15:57.446 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLBlockQuoteElement
+19:15:57.446 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+19:15:57.447 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+19:15:57.447 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+19:15:57.447 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+19:15:57.448 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+19:15:57.448 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+19:15:57.448 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+19:15:57.448 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+19:15:57.449 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+19:15:57.449 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+19:15:57.449 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+19:15:57.449 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+19:15:57.449 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+19:15:57.450 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+19:15:57.450 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLDefinitionDescriptionElement
+19:15:57.450 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+19:15:57.451 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+19:15:57.461 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+19:15:57.462 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+19:15:57.462 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+19:15:57.462 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+19:15:57.463 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+19:15:57.463 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+19:15:57.464 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+19:15:57.468 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+19:15:57.472 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+19:15:57.472 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+19:15:57.472 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+19:15:57.473 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+19:15:57.474 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+19:15:57.474 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+19:15:57.474 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+19:15:57.475 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+19:15:57.475 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+19:15:57.475 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+19:15:57.475 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+19:15:57.475 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+19:15:57.476 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+19:15:57.476 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMpath to SVGMpathElement
+19:15:57.476 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLDefinitionTermElement
+19:15:57.476 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+19:15:57.477 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+19:15:57.478 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+19:15:57.479 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+19:15:57.479 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+19:15:57.480 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+19:15:57.480 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+19:15:57.480 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+19:15:57.480 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+19:15:57.480 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+19:15:57.480 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+19:15:57.481 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+19:15:57.481 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+19:15:57.481 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+19:15:57.481 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+19:15:57.481 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+19:15:57.482 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+19:15:57.482 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+19:15:57.482 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+19:15:57.482 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+19:15:57.482 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+19:15:57.482 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+19:15:57.483 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+19:15:57.483 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+19:15:57.488 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+19:15:57.499 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLBlockElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLBlockElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLBlockElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLBlockElement
+19:15:57.501 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLBlockElement
+19:15:57.502 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+19:15:57.502 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+19:15:57.502 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+19:15:57.503 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+19:15:57.503 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+19:15:57.506 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+19:15:57.506 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+19:15:57.506 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+19:15:57.507 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+19:15:57.507 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+19:15:57.507 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+19:15:57.507 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+19:15:57.507 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+19:15:57.508 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+19:15:57.508 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+19:15:57.508 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+19:15:57.508 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+19:15:57.508 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+19:15:57.509 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+19:15:57.509 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+19:15:57.509 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+19:15:57.509 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+19:15:57.509 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+19:15:57.510 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+19:15:57.511 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+19:15:57.511 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+19:15:57.513 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+19:15:57.514 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLPhraseElement
+19:15:57.515 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLPhraseElement
+19:15:57.515 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLPhraseElement
+19:15:57.516 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlRp to HTMLPhraseElement
+19:15:57.516 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlRt to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLPhraseElement
+19:15:57.517 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlRuby to HTMLPhraseElement
+19:15:57.518 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLPhraseElement
+19:15:57.519 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLPhraseElement
+19:15:57.527 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLPhraseElement
+19:15:57.528 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLPhraseElement
+19:15:57.528 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLPhraseElement
+19:15:57.529 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLPhraseElement
+19:15:57.529 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+19:15:57.529 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+19:15:57.529 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+19:15:57.530 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+19:15:57.530 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+19:15:57.530 [main] DEBUG c.g.h.j.c.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+19:15:58.513 [main] DEBUG n.s.j.h.HtmlUnitTestingEngineImpl - Window "" changed : "no_html" became "SchoolMate - <h1>xss</h1>
+19:15:58.524 [main] DEBUG c.g.htmlunit.html.HtmlElement - Firing Event DOMContentLoaded (Current Target: HTMLElement for HtmlHtml[<html>]);
+19:15:58.533 [main] DEBUG c.g.htmlunit.html.HtmlElement - Firing Event load (Current Target: HTMLElement for HtmlHtml[<html>]);
+19:15:58.534 [main] DEBUG c.g.h.j.host.EventListenersContainer - Executing load handler for HtmlPage(http://localhost/schoolmate/index.php)@1578195
+19:15:59.842 [main] DEBUG c.g.htmlunit.html.HtmlElement - Firing Event focusin (Current Target: HTMLElement for HtmlTextInput[<input type="text" name="username" maxlength="15" width="18">]);
+19:15:59.847 [main] DEBUG c.g.htmlunit.html.HtmlElement - Firing Event focus (Current Target: HTMLElement for HtmlTextInput[<input type="text" name="username" maxlength="15" width="18">]);
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
