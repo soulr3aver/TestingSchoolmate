@@ -13,7 +13,7 @@ import org.junit.Test;
  *
  * @author iono
  */
-public class xss_index_php_2 {
+public class xss_index_php_105 {
     
     WebTester tester = new WebTester();
     
@@ -33,7 +33,7 @@ public class xss_index_php_2 {
             try{
             connect = DriverManager.getConnection("jdbc:mysql://localhost/schoolmate", "schoolmate", "schoolmate");
             statement= connect.createStatement();
-            statement.execute("update schoolinfo set schoolname='<h1>xss</h1>'");
+            statement.execute("update schoolinfo set sitetext='<a>stored malicious link</a>'");
             }
             catch( SQLException e){
             System.out.printf(e.toString());
@@ -44,9 +44,19 @@ public class xss_index_php_2 {
     }
     
     @Test
-    public void Attack(){
+    public void Attack_storexss(){
         tester.assertElementNotPresentByXPath("//table/tbody/tr/td/div/h1");
-        tester.assertTextPresent("School Name");
+        tester.assertLinkNotPresentWithText("stored malicious link");
+    }
+    
+    @Test
+    public void Attack_page(){
+        tester.setTextField("username", "aasad");
+        tester.setTextField("password", "asdas");
+        tester.setHiddenField("page", "0' /><a>malicious link</a>");
+        tester.submit();
+        tester.assertLinkNotPresentWithText("malicious link");
+
     }
    
     
@@ -66,7 +76,7 @@ public class xss_index_php_2 {
             try{
             connect = DriverManager.getConnection("jdbc:mysql://localhost/schoolmate", "schoolmate", "schoolmate");
             statement= connect.createStatement();
-            statement.execute("update schoolinfo set schoolname='School Name'");
+            statement.execute("update schoolinfo set sitetext='Message'");
             }
             catch( SQLException e){
             System.out.printf(e.toString());

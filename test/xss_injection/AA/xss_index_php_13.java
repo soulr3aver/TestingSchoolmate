@@ -28,50 +28,25 @@ public class xss_index_php_13 {
     }
 
     @Test
-    public void Attack_semester() {
-        tester.clickLinkWithText("Attendance");
-        tester.assertMatch("Attendance");
-        tester.setWorkingForm("registration");
-        tester.selectOption("semester", "1sem");
-        tester.getElementByXPath("//form[@name='registration']/select[@name='semester']/option").setAttribute("value", "1'><a>Evil link</a><br '");
-        tester.clickButtonWithText("Add");
-        tester.assertMatch("Add New Attendance Record");
-        tester.assertLinkNotPresentWithText("Evil link");
-    }
-
-    @Test
-    public void Attack_student() {
-        tester.clickLinkWithText("Attendance");
-        tester.assertMatch("Attendance");
-        tester.setWorkingForm("registration");
-        tester.selectOption("student", "1234 1234");
-        tester.getElementByXPath("//form[@name='registration']/select[@name='student']/option").setAttribute("value", "1'><a>Evil link</a><br '");
-        tester.clickButtonWithText("Add");
-        tester.assertMatch("Add New Attendance Record");
-        tester.assertLinkNotPresentWithText("Evil link");
-    }
-
-    @Test
     public void Attack_page2() {
-        tester.clickLinkWithText("Attendance");
-        tester.assertMatch("Attendance");
-        tester.setWorkingForm("registration");
-        tester.setHiddenField("page2", "31'><a>Evil link</a><br '");
-        Support_Function.addSubmitButton("/html//form[@name='registration']", tester);
-        tester.setWorkingForm("registration");
+        tester.clickLinkWithText("Parents");
+        tester.assertMatch("Manage Parents");
+        tester.setWorkingForm("parents");
+        tester.setHiddenField("page2", "23'><a>Evil link</a><br '");
+        Support_Function.addSubmitButton("/html//form[@name='parents']", tester);
         tester.submit();
-        tester.assertMatch("Add New Attendance Record");
+        tester.assertMatch("Add New Parent");
         tester.assertLinkNotPresentWithText("Evil link");
     }
 
     @Test
     public void Attack_page() {
-        tester.clickLinkWithText("Attendance");
-        tester.assertMatch("Attendance");
-        tester.setWorkingForm("registration");
-        tester.getElementByXPath("//form[@name='registration']/input[@name='page']").setAttribute("value", "1'><a>Evil link</a><br '");
+        tester.clickLinkWithText("Parents");
+        tester.assertMatch("Manage Parents");
+        tester.setWorkingForm("parents");
+        tester.getElementByXPath("//form[@name='parents']/input[@name='page']").setAttribute("value", "1'><a>Evil link</a><br '");
         tester.clickButtonWithText("Add");
-        tester.assertMatch("Add New Attendance Record");
+        tester.assertMatch("Add New Parent");
         tester.assertLinkNotPresentWithText("Evil link");
     }
 }

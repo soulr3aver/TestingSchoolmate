@@ -2,9 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package xss_injection.PA;
+package xss_injection.SA;
 
-import xss_injection.PA.*;
 import Support.Support_Function;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
@@ -21,7 +20,7 @@ import org.xml.sax.helpers.AttributesImpl;
  *
  * @author iono
  */
-public class xss_index_php_87 {
+public class xss_index_php_138 {
 
     WebTester tester = new WebTester();
 
@@ -29,55 +28,37 @@ public class xss_index_php_87 {
     public void setUp() {
         tester.setBaseUrl("http://localhost/schoolmate/");
         tester.beginAt("index.php");
-        tester.setTextField("username", "parent");
-        tester.setTextField("password", "parent");
+        tester.setTextField("username", "1234");
+        tester.setTextField("password", "1234");
         tester.submit();
     }
 
     @Test
     public void Attack_page2() {
-        tester.clickElementByXPath("html//form/table/tbody/tr/td/a[1]");
         tester.assertMatch("'s Classes");
-        Support_Function.setAll("page2", "1'/><a href=\"#\">malicious link</a><br'",tester);
+        Support_Function.setAll("page2", "0'/><a href=\"#\">malicious link</a><br'",tester);
         Support_Function.setAll("selectclass","5",tester);
         Support_Function.addSubmitButton("html//form[@name='classes']", tester);
         
         tester.setWorkingForm("classes");
 
         tester.submit();
-        tester.assertMatch("Settings");
+        tester.assertMatch("'s Classes");
         tester.assertLinkNotPresentWithText("malicious link");
 
     }
     @Test
         public void Attack_page() {
-        tester.clickElementByXPath("html//form/table/tbody/tr/td/a[1]");
         tester.assertMatch("'s Classes");
-        Support_Function.setAll("page", "5'/><a href=\"#\">malicious link</a><br'",tester);
+        Support_Function.setAll("page", "4'/><a href=\"#\">malicious link</a><br'",tester);
         Support_Function.setAll("selectclass","5",tester);
-        Support_Function.setAll("page2","1",tester);
+        Support_Function.setAll("page2","0",tester);
         Support_Function.addSubmitButton("html//form[@name='classes']", tester);
         
         tester.setWorkingForm("classes");
 
         tester.submit();
-        tester.assertMatch("Settings");
-        tester.assertLinkNotPresentWithText("malicious link");
-
-    }
-    
-        @Test
-        public void Attack_selectclass() {
-        tester.clickElementByXPath("html//form/table/tbody/tr/td/a[1]");
         tester.assertMatch("'s Classes");
-        Support_Function.setAll("selectclass", "5' -- /><a href=\"#\">malicious link</a><br'",tester);
-        Support_Function.setAll("page2","1",tester);
-        Support_Function.addSubmitButton("html//form[@name='classes']", tester);
-        
-        tester.setWorkingForm("classes");
-
-        tester.submit();
-        tester.assertMatch("Settings");
         tester.assertLinkNotPresentWithText("malicious link");
 
     }
