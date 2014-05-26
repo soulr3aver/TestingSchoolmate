@@ -36,7 +36,7 @@ public class xss_index_php_146 {
         
         tester.clickLinkWithText("1234 elli");
         tester.clickLinkWithText("pentest");
-        tester.setHiddenField("page2", "4'> <a href=www.google.com>evil link</a> <br '");
+        tester.setHiddenField("page2", "4'/> <a href=www.google.com>evil link</a> <br '");
         tester.setHiddenField("page", "5");
         Support_Function.addSubmitButton("/html//form[@name='student']", tester);
         tester.setWorkingForm("student");
@@ -51,7 +51,7 @@ public class xss_index_php_146 {
         
         tester.clickLinkWithText("1234 elli");
         tester.clickLinkWithText("pentest");
-        tester.setHiddenField("page", "5'> <a href=www.google.com>evil link</a> <br '");
+        tester.setHiddenField("page", "5'/> <a href=www.google.com>evil link</a> <br '");
         tester.setHiddenField("page2", "4");
         Support_Function.addSubmitButton("/html//form[@name='student']", tester);
         tester.setWorkingForm("student");
@@ -69,8 +69,8 @@ public class xss_index_php_146 {
         tester.clickLinkWithText("pentest");
         tester.clickLinkWithText("Announcements");
         tester.getElementByXPath("//form[@name='announcements']/center/a[text()='1']").setAttribute("href", "javascript:document.announcements.submit()");
-        tester.setHiddenField("onpage", "1'> <a href=www.google.com>evil link</a> <br '");
-        tester.setHiddenField("page", "4");
+        tester.setHiddenField("onpage", "1'/> <a href=www.google.com>evil link</a> <br '");
+        tester.setHiddenField("page2", "4");
         tester.setHiddenField("page", "5");
         tester.clickLinkWithText("1");
         tester.assertMatch("View Announcements");
