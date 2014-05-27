@@ -2,9 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package xss_injection.AA;
+package xss_injection.TA;
 
-import xss_injection.AA.*;
 import Support.Support_Function;
 import xss_injection.*;
 import java.sql.Connection;
@@ -17,7 +16,7 @@ import org.junit.Test;
  *
  * @author iono
  */
-public class xss_index_php_92 {
+public class xss_index_php_207 {
 
     WebTester tester = new WebTester();
 
@@ -35,47 +34,26 @@ public class xss_index_php_92 {
         try {
             connect = DriverManager.getConnection("jdbc:mysql://localhost/schoolmate", "schoolmate", "schoolmate");
             statement = connect.createStatement();
-            statement.execute("update schoolinfo set address=\"1,Street\'><a href=#>link</a>\'\"");
+            statement.execute("update courses set coursename=\"'><a>link</a>\'\" where courseid=5 ");
         } catch (SQLException e) {
             System.out.printf(e.toString());
         }
 
         tester.setBaseUrl("http://localhost/schoolmate");
         tester.beginAt("index.php");
-        tester.setTextField("username", "test");
-        tester.setTextField("password", "test");
+        tester.setTextField("username", "simoncelli");
+        tester.setTextField("password", "1");
         tester.submit();
     }
 
     @Test
     public void Attack() {
-        tester.clickElementByXPath("//form[@name='admin']/a[text()='School']");
+        tester.clickElementByXPath("html/body/table[2]/tbody/tr[2]/td[3]/table/tbody/tr/td/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td/a");
+        tester.clickLinkWithText("Assignments");
         tester.assertLinkNotPresentWithText("link");
     }
-    
-    @Test 
-    public void Attack_page2(){
-        //
-        Support_Function.setAll("page2", "1\'><a>link1</a><br \'",tester);
-        Support_Function.setAll("page", "1",tester);
-        Support_Function.addSubmitButton("//form[@name='admin']", tester);
-        tester.setWorkingForm("admin");
-        tester.submit();
-        tester.assertLinkNotPresentWithText("link1");
-    }
 
-    @Test 
-    public void Attack_page(){
-        tester.setWorkingForm("admin");
-        Support_Function.setAll("page2", "1",tester);
-        Support_Function.setAll("page", "1\'><a>link1</a><br \'",tester);
-        Support_Function.addSubmitButton("//form[@name='admin']", tester);
-        tester.submit();
-        tester.assertLinkNotPresentWithText("link1");
-    }
-    
-
-   @After
+    @After
     public void restore() {
 
         try {
@@ -89,7 +67,7 @@ public class xss_index_php_92 {
         try {
             connect = DriverManager.getConnection("jdbc:mysql://localhost/schoolmate", "schoolmate", "schoolmate");
             statement = connect.createStatement();
-            statement.execute("update schoolinfo set address='1,Street'");
+            statement.execute("update courses set coursename='pentest' where courseid=5 ");
         } catch (SQLException e) {
             System.out.printf(e.toString());
         }
